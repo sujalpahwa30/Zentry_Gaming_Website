@@ -1,4 +1,4 @@
-import { gsap }from "gsap";
+import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
@@ -14,7 +14,7 @@ const Hero = () => {
     const [hasClicked, setHasClicked] = useState(false);
 
     const [loading, setLoading] = useState(true);
-    const [loadedVideos, setLoadedVideos] = useState(false);
+    const [loadedVideos, setLoadedVideos] = useState(0);
 
     const totalVideos = 4;
     const nextVdRef = useRef(null);

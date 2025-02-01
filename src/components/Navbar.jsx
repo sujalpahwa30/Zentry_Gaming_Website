@@ -26,7 +26,7 @@ const Navbar = () => {
 
     useEffect(() => {
         if (isAudioPlaying) {
-            audioElementRef.curent.play();
+            audioElementRef.current.play();
         } else {
             audioElementRef.current.pause();
         }

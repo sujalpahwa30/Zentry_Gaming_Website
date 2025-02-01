@@ -17,7 +17,7 @@ export const BentoTilt = ({ children, className = "" }) => {
         const tiltX = (relativeY - 0.5) * 5;
         const tiltY = (relativeX - 0.5) * -5;
 
-        const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY($(tiltY)deg) scale3d(.95, .95, .95)`;
+        const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
         setTransformStyle(newTransform);
     };
 
@@ -82,7 +82,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
                         className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
                         >
                             <div
-                            className="pointer-eventsnone absolute -inset-px opacity-0 transition duration-300"
+                            className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
                             style={{
                                 opacity: hoverOpacity,
                                 background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
